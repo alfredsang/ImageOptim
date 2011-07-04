@@ -36,6 +36,14 @@
 	<string>/usr/bin/optipng</string>
 	<key>OptiPng.Level</key>
 	<real>6</real>
+	<key>PngQuant.Bundle</key>
+	<true/>
+	<key>PngQuant.Enabled</key>
+	<true/>
+	<key>PngQuant.Path</key>
+	<string>/usr/bin/pngquant</string>
+	<key>PngQuant.Colors</key>
+	<integer>256</integer>
 	<key>PngCrush.Bundle</key>
 	<true/>
 	<key>PngCrush.Enabled</key>

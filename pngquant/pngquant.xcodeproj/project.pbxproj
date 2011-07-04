@@ -1,0 +1,266 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C97C0E9313C2116D004A2B9F /* rwpng.c in Sources */ = {isa = PBXBuildFile; fileRef = C97C0E2813C20F75004A2B9F /* rwpng.c */; };
+		C97C0E9413C21170004A2B9F /* pngquant.c in Sources */ = {isa = PBXBuildFile; fileRef = C97C0E2713C20F75004A2B9F /* pngquant.c */; };
+		C97C103313C215A7004A2B9F /* liblibpng.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C97C101913C212C1004A2B9F /* liblibpng.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C97C101813C212C1004A2B9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C97C101213C212C1004A2B9F /* libpng.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC0630554660B00DB518D;
+			remoteInfo = libpng;
+		};
+		C97C103113C2158D004A2B9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C97C101213C212C1004A2B9F /* libpng.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC0620554660B00DB518D;
+			remoteInfo = libpng;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C97C0E2F13C20FB5004A2B9F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C97C0E2713C20F75004A2B9F /* pngquant.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pngquant.c; sourceTree = "<group>"; };
+		C97C0E2813C20F75004A2B9F /* rwpng.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = rwpng.c; sourceTree = "<group>"; };
+		C97C0E2913C20F75004A2B9F /* rwpng.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rwpng.h; sourceTree = "<group>"; };
+		C97C0E3113C20FB5004A2B9F /* pngquant */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = pngquant; sourceTree = BUILT_PRODUCTS_DIR; };
+		C97C101213C212C1004A2B9F /* libpng.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libpng.xcodeproj; path = ../libpng/libpng.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C97C0E2E13C20FB5004A2B9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C97C103313C215A7004A2B9F /* liblibpng.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C97C0E1B13C20EDB004A2B9F = {
+			isa = PBXGroup;
+			children = (
+				C97C0E9213C21138004A2B9F /* Source */,
+				C97C0E3213C20FB5004A2B9F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C97C0E3213C20FB5004A2B9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C97C0E3113C20FB5004A2B9F /* pngquant */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C97C0E9213C21138004A2B9F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C97C101213C212C1004A2B9F /* libpng.xcodeproj */,
+				C97C0E2713C20F75004A2B9F /* pngquant.c */,
+				C97C0E2813C20F75004A2B9F /* rwpng.c */,
+				C97C0E2913C20F75004A2B9F /* rwpng.h */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		C97C101313C212C1004A2B9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C97C101913C212C1004A2B9F /* liblibpng.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C97C0E3013C20FB5004A2B9F /* pngquant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C97C0E3B13C20FB5004A2B9F /* Build configuration list for PBXNativeTarget "pngquant" */;
+			buildPhases = (
+				C97C0E2D13C20FB5004A2B9F /* Sources */,
+				C97C0E2E13C20FB5004A2B9F /* Frameworks */,
+				C97C0E2F13C20FB5004A2B9F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C97C103213C2158D004A2B9F /* PBXTargetDependency */,
+			);
+			name = pngquant;
+			productName = pngquant;
+			productReference = C97C0E3113C20FB5004A2B9F /* pngquant */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C97C0E1D13C20EDB004A2B9F /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C97C0E2013C20EDB004A2B9F /* Build configuration list for PBXProject "pngquant" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C97C0E1B13C20EDB004A2B9F;
+			productRefGroup = C97C0E3213C20FB5004A2B9F /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C97C101313C212C1004A2B9F /* Products */;
+					ProjectRef = C97C101213C212C1004A2B9F /* libpng.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				C97C0E3013C20FB5004A2B9F /* pngquant */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C97C101913C212C1004A2B9F /* liblibpng.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = liblibpng.dylib;
+			remoteRef = C97C101813C212C1004A2B9F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C97C0E2D13C20FB5004A2B9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C97C0E9313C2116D004A2B9F /* rwpng.c in Sources */,
+				C97C0E9413C21170004A2B9F /* pngquant.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C97C103213C2158D004A2B9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libpng;
+			targetProxy = C97C103113C2158D004A2B9F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C97C0E2213C20EDB004A2B9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+			};
+			name = Debug;
+		};
+		C97C0E2313C20EDB004A2B9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+			};
+			name = Release;
+		};
+		C97C0E3913C20FB5004A2B9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../libpng/**";
+			};
+			name = Debug;
+		};
+		C97C0E3A13C20FB5004A2B9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../libpng/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C97C0E2013C20EDB004A2B9F /* Build configuration list for PBXProject "pngquant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C97C0E2213C20EDB004A2B9F /* Debug */,
+				C97C0E2313C20EDB004A2B9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C97C0E3B13C20FB5004A2B9F /* Build configuration list for PBXNativeTarget "pngquant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C97C0E3913C20FB5004A2B9F /* Debug */,
+				C97C0E3A13C20FB5004A2B9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C97C0E1D13C20EDB004A2B9F /* Project object */;
+}

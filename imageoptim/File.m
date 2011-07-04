@@ -8,6 +8,7 @@
 
 #import "Workers/AdvCompWorker.h"
 #import "Workers/PngoutWorker.h"
+#import "Workers/PngQuantWorker.h"
 #import "Workers/OptiPngWorker.h"
 #import "Workers/PngCrushWorker.h"
 #import "Workers/JpegoptimWorker.h"
@@ -372,6 +373,12 @@
 		if ([defs boolForKey:@"PngCrush.Enabled"])
 		{
 			w = [[PngCrushWorker alloc] initWithFile:self];
+			if ([w makesNonOptimizingModifications]) [runFirst addObject:w];
+			else [runLater addObject:w];
+		}
+		if ([defs boolForKey:@"PngQuant.Enabled"])
+		{
+			w = [[PngQuantWorker alloc] initWithFile:self];
 			if ([w makesNonOptimizingModifications]) [runFirst addObject:w];
 			else [runLater addObject:w];
 		}
