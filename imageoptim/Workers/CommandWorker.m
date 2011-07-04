@@ -153,7 +153,7 @@
 	NSString *path = nil;
 
 	// FIXME: for some reason it is not reading PngQuant.Bundle as "TRUE".
-	if ([defs boolForKey:[NSString stringWithFormat:@"%@.Bundle",prefsName]] || [prefsName isEqualToString:@"PngQuant"])
+	if ([defs boolForKey:[NSString stringWithFormat:@"%@.Bundle",prefsName]])
 	{
 		path = [[NSBundle mainBundle] pathForResource:resourceName ofType:nil];
 		if (path && [[NSFileManager defaultManager] isExecutableFileAtPath:path])

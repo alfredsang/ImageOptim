@@ -23,9 +23,8 @@
 	NSString *temp = [self tempPath];
 	
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-	NSLog(@"%d",__LINE__);
 	NSTask *task = [self taskForKey:@"PngQuant" bundleName:@"pngquant" arguments:[NSArray arrayWithObjects:@"-force", [[defaults objectForKey:@"PngQuant.Colors"] stringValue], nil]];
-	NSLog(@"%d",__LINE__);
+
     if (!task) {
         return;
     }

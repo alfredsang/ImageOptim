@@ -52,9 +52,9 @@
 -(IBAction)browseForExecutable:(id)sender
 {
 	NSInteger tag = [sender tag];
-	if (tag >= 1 && tag <= 7)
+	if (tag >= 1 && tag <= 8)
 	{
-		static NSString *keys[] = {@"JpegOptim",@"AdvPng",@"OptiPng",@"PngCrush",@"PngOut",@"JpegTran",@"Gifsicle"};
+		static NSString *keys[] = {@"JpegOptim",@"AdvPng",@"OptiPng",@"PngCrush",@"PngOut",@"PngQuant",@"JpegTran",@"Gifsicle"};
 		NSString *key = keys[tag-1];
 		
 		NSOpenPanel *oPanel = [NSOpenPanel openPanel];
@@ -107,10 +107,10 @@
 	[[self window] setHidesOnDeactivate:NO];
 	
 	NSString *locBookName = [[NSBundle mainBundle] objectForInfoDictionaryKey: @"CFBundleHelpBookName"];
-	NSString *anchors[] = {@"general", @"jpegoptim", @"advpng", @"optipng", @"pngcrush", @"pngout"};
+	NSString *anchors[] = {@"general", @"jpegoptim", @"advpng", @"optipng", @"pngcrush", @"pngout", @"pngquant"};
 	NSString *anchor = @"main";
 	
-	if (tag >= 1 && tag <= 6)
+	if (tag >= 1 && tag <= 7)
 	{
 		anchor = anchors[tag-1];
 	}
