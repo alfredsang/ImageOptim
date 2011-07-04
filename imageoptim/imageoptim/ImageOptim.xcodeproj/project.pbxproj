@@ -204,6 +204,13 @@
 			remoteGlobalIDString = C97C0E3113C20FB5004A2B9F;
 			remoteInfo = pngquant;
 		};
+		C982E7BA13C23D3600A52FE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C97C0E2413C20EDB004A2B9F /* pngquant.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C97C0E3013C20FB5004A2B9F;
+			remoteInfo = pngquant;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -599,6 +606,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				C982E7BB13C23D3600A52FE4 /* PBXTargetDependency */,
 				5A20CCA5112393CC0000400D /* PBXTargetDependency */,
 				5A20CC98112393AC0000400D /* PBXTargetDependency */,
 				5A6CEA83102B887C0058D07E /* PBXTargetDependency */,
@@ -903,6 +911,11 @@
 			isa = PBXTargetDependency;
 			target = 8D1107260486CEB800E47090 /* ImageOptim */;
 			targetProxy = 5ABB9FEF0E8518DF006F51BB /* PBXContainerItemProxy */;
+		};
+		C982E7BB13C23D3600A52FE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = pngquant;
+			targetProxy = C982E7BA13C23D3600A52FE4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
